@@ -11,14 +11,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 		<style>
-			.challenge.container {
-				width: 100%;
-				padding: 0;
-			}
-			.challenge.container .row div {
-				height: 100px;
+			div.bordered>div {
 				border: 2px solid blue;
-				padding: 5px;
+				height: 100px;
+			}
+			div.bordered {
+				margin-top: 20px;
 			}
 		</style>
     </head>
@@ -45,22 +43,26 @@
         </nav>
         <!-- Page content-->
         <div class="container">
-            <div class="text-center">
+			<div class="row">
+				<div class="col-lg-12 text-center">
                 <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
+                <p class="lead">A complete project boilerplate built with Bootstrap <span>SOME SPAM TEXT</span> responsive navigation!</p>
+				<p>more paragraphs</p>
                 <ul class="list-unstyled">
                     <li>Bootstrap 4.6.0</li>
                     <li>jQuery 3.5.1</li>
                 </ul>
             </div>
+			</div>
+            
         </div>
 		
-		<div class="container challenge">
-			<div class="row">
-				<div class="col-sm-6 col-md-3 col-lg-3"></div>
-				<div class="col-sm-6 col-md-9 col-lg-9 col-xl-3 "></div>
-				<div class="col-sm-6 col-md-9 col-lg-9 col-xl-3"></div>
-				<div class="col-sm-6 col-md-3 col-lg-3"></div>
+		<div class="container">
+			<div class="row bordered">
+				<div class="col-md-4 col-lg-3"></div>
+				<div class="col-md-4 col-lg-3"></div>
+				<div class="col-md-4 col-lg-3"></div>
+				<div class="col-md-4 col-lg-3"></div>
 			</div>
 		</div>
         <!-- Bootstrap core JS-->
