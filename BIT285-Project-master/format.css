@@ -22,17 +22,20 @@
 .col-lg-6 h1 {
 	letter-spacing: 3px;
 	margin-left: 35%;
+	opacity: 9;
 }
 .col-lg-6 p {
 	letter-spacing: 1px;
 	margin-left: 10%;
+	font-size: 18px;
+	font-style: italic;
 }
 .col-lg-6 button {
 	margin-left: 15%;
 }
 .card {
 	width: 100%;
-	display: inline-block;
+	display: inline-flex;
 	border-radius: 10px;
 	padding: 15px;
 	box-sizing: border-box;
@@ -43,8 +46,8 @@
 	opacity: 0.5;
 }
 .card-1 {
-	background-image: url("images/card_1.jpg");
-	background-size: cover;
+		background-image: url("images/card_1.jpg");
+		background-size: cover; 
 }
 .card-2 {
 	background-image: url("images/card_2.jpg");
@@ -58,10 +61,19 @@
 	background-image: url("images/card_4.jpg");
 	background-size: cover;
 }
-p {
+.card p {
+	opacity: 9;
 	background: none;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-left: 10%;
+	font-size: 18px;
+	font-style: italic;
 }
-h5 {
+.card h5 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
 	background: none;
 }
 button {
